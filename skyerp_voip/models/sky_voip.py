@@ -38,7 +38,7 @@ class ResPartner(models.Model):
                 return member.phone
 
     @api.model
-    def notify_phone(self, number, phone):
+    def incoming_phone_call(self, number, phone):
         try:        
             user = self.env['res.users'].search([('partner_id.phone', '=', phone)])
             # user = self.env['res.users'].browse(1)
@@ -59,6 +59,14 @@ class ResPartner(models.Model):
         except Exception as e:
             return False
         return True
+
+    @api.model
+    def outgoing_phone_call(self, number, phone):
+        try:
+            print 'Out going phone', number, phone
+            return True
+        except Exception as e:
+            return False
 
 class SaleOrder(models.Model):
     _inherit = 'sale.order'
