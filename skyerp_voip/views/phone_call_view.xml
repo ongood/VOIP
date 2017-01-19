@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+<data>
+
+    <record model="ir.ui.view" id="view_phone_call_form">
+        <field name="name">phone.call.form</field>
+        <field name="model">sky.phone.call</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="date" />
+                            <field name="name" />
+                            <field name="partner_id" />
+                            <field name="address" />
+                            <field name="user_id" />
+                            <field name="order_id" />
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Note">
+                            <field name="note" />
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    
+
+    <record model="ir.ui.view" id="view_phone_call_tree">
+        <field name="name">phone.call.tree</field>
+        <field name="model">sky.phone.call</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="date" />
+                <field name="name" />
+                <field name="partner_id" />
+                <field name="address" />
+                <field name="user_id" />
+                <field name="order_id" />
+                <field name="note" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_phone_call" model="ir.actions.act_window">
+        <field name="name">Phone call</field>
+        <field name="res_model">sky.phone.call</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_call_phone" parent="skyerp_vietgas.sky_vietgas_menu_root" sequence="12" action="action_phone_call" />
+
+</data>
+</odoo>

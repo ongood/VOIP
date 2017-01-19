@@ -1,0 +1,120 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* skyerp_voip
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-18 06:35+0000\n"
+"PO-Revision-Date: 2017-01-18 06:35+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: skyerp_voip
+#: model:ir.model.fields,field_description:skyerp_voip.field_sky_phone_call_address
+msgid "Address"
+msgstr "Địa chỉ"
+
+#. module: skyerp_voip
+#: model:ir.model.fields,field_description:skyerp_voip.field_sky_phone_call_create_uid
+msgid "Created by"
+msgstr "Được tạo bởi"
+
+#. module: skyerp_voip
+#: model:ir.model.fields,field_description:skyerp_voip.field_sky_phone_call_create_date
+msgid "Created on"
+msgstr "Được tạo vào"
+
+#. module: skyerp_voip
+#: model:ir.model.fields,field_description:skyerp_voip.field_sky_phone_call_date
+msgid "Date"
+msgstr "Ngày tháng"
+
+#. module: skyerp_voip
+#: model:ir.model.fields,field_description:skyerp_voip.field_sky_phone_call_display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: skyerp_voip
+#: model:ir.model.fields,field_description:skyerp_voip.field_sky_phone_call_id
+msgid "ID"
+msgstr "ID"
+
+#. module: skyerp_voip
+#: model:ir.model.fields,field_description:skyerp_voip.field_sky_phone_call___last_update
+msgid "Last Modified on"
+msgstr "Sửa lần cuối vào"
+
+#. module: skyerp_voip
+#: model:ir.model.fields,field_description:skyerp_voip.field_sky_phone_call_write_uid
+msgid "Last Updated by"
+msgstr "Cập nhật lần cuối bởi"
+
+#. module: skyerp_voip
+#: model:ir.model.fields,field_description:skyerp_voip.field_sky_phone_call_write_date
+msgid "Last Updated on"
+msgstr "Cập nhật lần cuối"
+
+#. module: skyerp_voip
+#: model:ir.model.fields,field_description:skyerp_voip.field_sky_phone_call_note
+#: model:ir.ui.view,arch_db:skyerp_voip.view_phone_call_form
+msgid "Note"
+msgstr "Ghi chú"
+
+#. module: skyerp_voip
+#: model:ir.model.fields,field_description:skyerp_voip.field_sky_phone_call_order_id
+msgid "Order"
+msgstr "Đơn hàng"
+
+#. module: skyerp_voip
+#: model:ir.model,name:skyerp_voip.model_res_partner
+#: model:ir.model.fields,field_description:skyerp_voip.field_sky_phone_call_partner_id
+msgid "Partner"
+msgstr "Đối tác"
+
+#. module: skyerp_voip
+#: model:ir.actions.act_window,name:skyerp_voip.action_phone_call
+#: model:ir.ui.menu,name:skyerp_voip.menu_call_phone
+msgid "Phone call"
+msgstr "Cuộc gọi"
+
+#. module: skyerp_voip
+#: model:ir.model,name:skyerp_voip.model_sky_phone_call
+msgid "Phone call event"
+msgstr "Cuộc gọi"
+
+#. module: skyerp_voip
+#: model:ir.model.fields,field_description:skyerp_voip.field_sky_phone_call_name
+msgid "Phone number"
+msgstr "SĐT"
+
+#. module: skyerp_voip
+#: model:ir.model.fields,field_description:skyerp_voip.field_sky_phone_call_user_id
+msgid "Saleperson"
+msgstr "NV bán hàng"
+
+#. module: skyerp_voip
+#: model:ir.model,name:skyerp_voip.model_sale_order
+msgid "Sales Order"
+msgstr "Đơn hàng Bán"
+
+#. module: skyerp_voip
+#: model:ir.model.fields,field_description:skyerp_voip.field_res_users_take_call
+msgid "To receive calls"
+msgstr "Nhận cuộc gọi"
+
+#. module: skyerp_voip
+#: model:ir.model,name:skyerp_voip.model_res_users
+msgid "Users"
+msgstr "Người dùng"
+
+#. module: skyerp_voip
+#: model:ir.ui.view,arch_db:skyerp_voip.voip_view_users_form
+msgid "VOIP"
+msgstr "VOIP"
+
