@@ -26,6 +26,7 @@ class ResPartner(models.Model):
 
     @api.model
     def get_internal_number_from_number(self, number=None):
+        print 'get_internal_number_from_number', number
         if not number:
             return 'Number is required'
         ids = self.search(['|', ('phone', '=', number), ('mobile', '=', number)])
@@ -38,7 +39,8 @@ class ResPartner(models.Model):
                 return member.phone
 
     @api.model
-    def incoming_phone_call(self, number, phone):
+    def incoming_phone_call(self, number, phone, call_id=None):
+        print 'incoming_phone_call', number, phone, call_id
         try:        
             user = self.env['res.users'].search([('partner_id.phone', '=', phone)])
             # user = self.env['res.users'].browse(1)
@@ -64,12 +66,17 @@ class ResPartner(models.Model):
         return True
 
     @api.model
-    def outgoing_phone_call(self, number, phone):
+    def outgoing_phone_call(self, number, phone, call_id=None):
+        print 'outgoing_phone_call', number, phone, call_id
         try:
             print 'Out going phone', number, phone
             return True
         except Exception as e:
             return False
+
+    @api.model
+    def phone_call_result(self, call_id=None, status=None, recording_link=None):
+        print call_id, status, recording_link
 
 class SaleOrder(models.Model):
     _inherit = 'sale.order'
