@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+<data>
+
+    <record model="ir.ui.view" id="sky_phone_call_wizard_form_view">
+        <field name="name">Report</field>
+        <field name="model">sky.phone.call.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Phone call">
+                <label for="phone" string="Phone" />
+                <h1><field name="phone" /></h1>
+                <group>
+                    
+                </group>
+                <footer>
+                     <button name="submit" string="Submit" type="object" class="oe_highlight" />
+                    <button string="Cancel" class="btn-default" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+
+    <record id="sky_phone_call_wizard_action" model="ir.actions.act_window">
+        <field name="name">Phone call</field>
+        <field name="res_model">sky.phone.call.wizard</field>
+        <field name="target">new</field>
+        <field name="context">{}</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">form</field>
+    </record>
+
+
+</data>
+</openerp>

@@ -40,6 +40,7 @@ Create phone event from VOIP
     'images': [],
     'depends': ['skyerp_vietgas'],
     'data': [
+        'wizard/sky_phone_call_wizard_view.xml',
         'views/res_users_view.xml',
         'views/phone_call_view.xml',
     ],

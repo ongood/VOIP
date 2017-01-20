@@ -42,11 +42,14 @@ class ResPartner(models.Model):
         try:        
             user = self.env['res.users'].search([('partner_id.phone', '=', phone)])
             # user = self.env['res.users'].browse(1)
+            action = self.env.ref('skyerp_voip.sky_phone_call_wizard_action')
+            action['context'] = {'default_phone': number}
             wizard = self.env['web.action.request.setting'].create({
                 'user': user.id,
-                'action': 350,
+                'action': action.id,
             })
             wizard.button_check_action_request()
+            wizard.unlink()
             partner = self.search(['|', ('phone', '=', number), ('mobile', '=', number)])
             partner = partner and partner[0] or False
             self.env['sky.phone.call'].sudo().create({
