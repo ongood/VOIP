@@ -19,6 +19,10 @@
                             <field name="status" />
                             <field name="link" />
                             <field name="duration" />
+                            <field name="billsec" />
+                        </group>
+                        <group>
+                            <field name="type" />
                             <field name="partner_id" />
                             <field name="address" />
                             <field name="user_id" />
@@ -47,6 +51,8 @@
                 <field name="status" />
                 <field name="link" />
                 <field name="duration" />
+                <field name="billsec" />
+                <field name="type" />
                 <field name="partner_id" />
                 <field name="address" />
                 <field name="user_id" />
