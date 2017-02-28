@@ -9,11 +9,14 @@
             <form string="Phone call">
                 <label for="phone" string="Phone" />
                 <h1><field name="phone" /></h1>
-                <group>
-                    
-                </group>
+                        <div>
+                            <button name="submit" string="Thêm số điện thoại" type="object" class="oe_highlight" style="min-width: 300px; min-height: 50px; font-size: 20px;" />
+                            <button name="submit" string="Thêm khách hàng mới" type="object" class="oe_highlight  oe_right" style="min-width: 300px; min-height: 50px; font-size: 20px;" />
+                        </div>
+                        <field name="partner_id" style="min-width: 300px; margin-top: 5px;" />
+
                 <footer>
-                     <button name="submit" string="Submit" type="object" class="oe_highlight" />
+                     <!-- <button name="submit" string="" type="object" class="oe_highlight" /> -->
                     <button string="Cancel" class="btn-default" special="cancel" />
                 </footer>
             </form>
@@ -29,7 +32,6 @@
         <field name="view_type">form</field>
         <field name="view_mode">form</field>
     </record>
-
 
 </data>
 </openerp>

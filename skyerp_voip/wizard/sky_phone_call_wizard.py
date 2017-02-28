@@ -14,3 +14,9 @@ class PhoneCallWizard(models.TransientModel):
     _name = 'sky.phone.call.wizard'
 
     phone = fields.Char('Phone')
+    partner_id = fields.Many2one('res.partner', 'Khách hàng')
+    partner_id2 = fields.Many2one('res.partner', 'Khách hàng')
+
+    @api.multi
+    def submit(self):
+        pass

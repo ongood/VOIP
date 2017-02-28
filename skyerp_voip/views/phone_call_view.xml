@@ -2,6 +2,7 @@
 <odoo>
 <data>
 
+
     <record model="ir.ui.view" id="view_phone_call_form">
         <field name="name">phone.call.form</field>
         <field name="model">sky.phone.call</field>
@@ -12,8 +13,12 @@
                 <sheet>
                     <group>
                         <group>
-                            <field name="date" />
-                            <field name="name" />
+                            <field name="start_time" />
+                            <field name="phone_src" />
+                            <field name="phone_dest" />
+                            <field name="status" />
+                            <field name="link" />
+                            <field name="duration" />
                             <field name="partner_id" />
                             <field name="address" />
                             <field name="user_id" />
@@ -36,8 +41,12 @@
         <field name="model">sky.phone.call</field>
         <field name="arch" type="xml">
             <tree>
-                <field name="date" />
-                <field name="name" />
+                <field name="start_time" />
+                <field name="phone_src" />
+                <field name="phone_dest" />
+                <field name="status" />
+                <field name="link" />
+                <field name="duration" />
                 <field name="partner_id" />
                 <field name="address" />
                 <field name="user_id" />
@@ -52,6 +61,15 @@
         <field name="res_model">sky.phone.call</field>
         <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="sky_action_poup" model="ir.actions.act_window">
+        <field name="name">Cuộc gọi đến</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">res.partner</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
     </record>
 
     <menuitem id="menu_call_phone" parent="skyerp_vietgas.sky_vietgas_menu_root" sequence="12" action="action_phone_call" />

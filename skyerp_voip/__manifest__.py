@@ -38,7 +38,7 @@ Create phone event from VOIP
     'author': 'SkyERP team',
     'website': 'https://www.skyerp.net',
     'images': [],
-    'depends': ['skyerp_vietgas'],
+    'depends': ['skyerp_vietgas', 'web_action_request'],
     'data': [
         'wizard/sky_phone_call_wizard_view.xml',
         'views/res_users_view.xml',
